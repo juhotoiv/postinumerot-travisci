@@ -3,5 +3,5 @@ install:
     - pip install pytest
     - pip install coverage
 script:
-    - coverage run -m pytest
+    - coverage run --omit */site-packages/* -m pytest
     - coverage report -m
