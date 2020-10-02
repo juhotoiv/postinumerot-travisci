@@ -1,3 +1,7 @@
 language: python
+install:
+    - pip install pytest
+    - pip install coverage
 script:
     - pytest
+    - coverage report -m
